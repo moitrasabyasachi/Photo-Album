@@ -1,3 +1,3 @@
 # Photo-Album
 ## Platform: Kivy, MySQL
-<img src="pa.png">
+<img src="Untitled.png">
