@@ -93,8 +93,8 @@ class ViewPhotoScreen(Screen):
 
     def save_photo(self, y):
         # y = "https://github.com/HeaTTheatR/KivyMD-data/raw/master/gallery/previous.png"
-        # save_dir = MDApp.get_running_app().storage
-        save_dir = "C:\\Users\\MOITRA-L-2\\Desktop\\photoalbum"
+        save_dir = MDApp.get_running_app().storage
+        # save_dir = "C:\\Users\\MOITRA-L-2\\Desktop\\photoalbum"
         local_filename = y.split('/')[-1]
         local_file = os.path.join(save_dir, local_filename)
         # response = requests.get(y, stream=True)
