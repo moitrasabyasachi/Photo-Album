@@ -43,6 +43,7 @@ class ChangePasswordScreen(Screen):
         confirm_new_pwd = self.textfield3.text
         if current_pwd == '' or new_pwd == '' or confirm_new_pwd == '':
             msg = "Empty entry"
+            self.show_toast(msg)
         else:
             conn = sql.connect(host=db.host, user=db.user, password=db.password, database=db.database)
             cur = conn.cursor()
