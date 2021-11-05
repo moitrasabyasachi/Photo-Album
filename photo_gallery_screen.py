@@ -39,6 +39,12 @@ class PhotoGalleryScreen(Screen):
                 images = SmartTileWithLabel(source="photos/" + pname, box_color=(0, 0, 0, 0),
                                             on_release=self.view_photo_screen)
                 self.ids.md_grid_layout.add_widget(images)
+                
+            if len(results) < self.ids.md_grid_layout.cols:
+                diff = self.ids.md_grid_layout.cols - len(results)
+                for i in range(diff):
+                    images = SmartTileWithLabel(source='', box_color=(0, 0, 0, 0))
+                    self.ids.md_grid_layout.add_widget(images)
         else:
             pass
 
