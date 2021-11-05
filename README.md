@@ -1,3 +1,3 @@
 # Photo-Album
-## Technologies used: Kivy, MySQL
+## Technologies used: Python/Kivy, MySQL
 <img src="pa.png">
