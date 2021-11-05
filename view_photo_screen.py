@@ -35,7 +35,10 @@ class ViewPhotoScreen(Screen):
         else:
             pass
 
-        self.ids.scroll_view.scroll_to(images)
+        if len(results) > 1:
+            self.ids.scroll_view.scroll_to(images)
+        else:
+            pass
 
         query = "SELECT * FROM photo WHERE aid = %s AND slno > %s ORDER BY slno ASC"
         val = (aid, slno)
